@@ -1,6 +1,5 @@
 ## Pending
 - Setup Database
-- Re-Design Navbar
 - Design Cover
 - Design Features Section
 - Design CTA Section
@@ -9,6 +8,7 @@
 
 
 ## Completed
+- Re-Design Navbar
 - Create App Layout
 - Project setup with github
 - Install tailwindcss

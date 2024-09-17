@@ -7,8 +7,8 @@
     @vite('resources/css/app.css')
     <title>Biolinkar :: Create Your Bio Here</title>
 </head>
-<body class="bg-gray-100">
-    <nav class="text-gray-500">
+<body class="bg-gray-100 text-gray-800">
+    <nav class="">
         <div class="container mx-auto px-4 bg-white rounded-lg shadow h-16 mt-6 flex items-center justify-between">
             <a href="">
                 <p class="text-2xl font-medium">BioLinkar</p>
