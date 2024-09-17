@@ -1,6 +1,7 @@
 ## Pending
-- Project setup with github
-- Install tailwindcss
 - Setup Database
+- Create App Layout
 
 ## Completed
+- Project setup with github
+- Install tailwindcss
