@@ -1,11 +1,12 @@
 ## Pending
 - Setup Database
 - Design FAQ
-- Design Footer
 - Make homepage responsive
+- Fix navbar z-index issue
 
 
 ## Completed
+- Design Footer
 - Design CTA Section
 - Design more features section
 - Design Features Section

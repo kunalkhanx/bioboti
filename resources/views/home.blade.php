@@ -177,7 +177,7 @@
 
 
     {{-- CTA SECTION --}}
-    <div class="py-24">
+    <div class="py-24 px-4">
         <div class="section p-16 mx-auto bg-gradient-to-r from-pink-500 to-rose-500 rounded-2xl shadow flex justify-between items-center text-white">
             <div>
                 <h2 class="text-6xl font-semibold mb-6">Get started</h2>
@@ -190,4 +190,34 @@
         </div>
     </div>
     {{-- CTA SECTION --}}
+
+
+    {{-- FOOTER --}}
+
+    <div class="bg-white py-12">
+        <div class="section mx-auto px-4 flex items-center justify-between">
+            <div class="flex flex-col gap-6">
+                <a href="" class="w-fit">
+                    <p class="text-2xl font-medium">BioLinkar</p>
+                </a>
+                <p class="text-gray-400">&copy; 2024 | Biolinkar</p>
+            </div>
+            <div class="flex flex-col gap-6">
+                <ul class="flex items-center gap-3">
+                    <li><a href="" class="hover:text-gray-500">Home</a></li>
+                    <li><a href="" class="hover:text-gray-500">Terms of use</a></li>
+                    <li><a href="" class="hover:text-gray-500">Privacy Policy</a></li>
+                    <li><a href="" class="hover:text-gray-500">Report</a></li>
+                </ul>
+
+                <ul class="flex items-center justify-end gap-3">
+                    <li><a href="" class="hover:text-gray-500 text-xl"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="" class="hover:text-gray-500 text-xl"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="" class="hover:text-gray-500 text-xl"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    {{-- FOOTER --}}
 @endsection
