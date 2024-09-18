@@ -113,4 +113,64 @@
 
     </div>
     {{-- FEATURES --}}
+
+
+
+    {{-- ALL FEATURES --}}
+    <div class="section py-24 px-4 mx-auto flex flex-col gap-12">
+
+        {{-- SECTION HEADER --}}
+        <h2 class="text-6xl font-semibold text-center leading-[5rem]">
+            For creators who <br> 
+            <span class="bg-gradient-to-r from-amber-500 to-pink-500 inline-block text-transparent bg-clip-text">want more.</span>
+        </h2>
+        {{-- SECTION HEADER --}}
+
+
+        {{-- SECTION CONTENT --}}
+        <div class="grid grid-cols-3 gap-8">
+
+            {{-- FEATURE ITEM --}}
+            <div class="p-8 bg-white rounded-xl shadow flex flex-col gap-6">
+
+                <div class="p-4 flex items-center bg-amber-300 rounded-lg">
+                    <h3 class="text-xl font-semibold">Create Unlimited Pages</h3>
+                </div>
+
+                <p class="text-gray-500 leading-6">Create unlimited unique & highly customizable bio link page with ease.</p>
+
+            </div>
+            {{-- FEATURE ITEM --}}
+
+
+            {{-- FEATURE ITEM --}}
+            <div class="p-8 bg-white rounded-xl shadow flex flex-col gap-6">
+
+                <div class="p-4 flex items-center bg-purple-300 rounded-lg">
+                    <h3 class="text-xl font-semibold">Build an email list</h3>
+                </div>
+
+                <p class="text-gray-500 leading-6">Grow your email list effortlessly with integrated signup forms and tracking.</p>
+
+            </div>
+            {{-- FEATURE ITEM --}}
+
+            {{-- FEATURE ITEM --}}
+            <div class="p-8 bg-white rounded-xl shadow flex flex-col gap-6">
+
+                <div class="p-4 flex items-center bg-rose-300 rounded-lg">
+                    <h3 class="text-xl font-semibold">Publish posts and alert</h3>
+                </div>
+
+                <p class="text-gray-500 leading-6">Share updates instantly and notify your audience with real-time alerts.</p>
+
+            </div>
+            {{-- FEATURE ITEM --}}
+
+
+        </div>
+        {{-- SECTION CONTENT --}}
+
+    </div>
+    {{-- ALL FEATURES --}}
 @endsection

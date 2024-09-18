@@ -1,6 +1,5 @@
 ## Pending
 - Setup Database
-- Design all features section
 - Design CTA Section
 - Design FAQ
 - Design Footer
@@ -8,6 +7,7 @@
 
 
 ## Completed
+- Design more features section
 - Design Features Section
 - Design Cover
 - Re-Design Navbar
