@@ -1,13 +1,15 @@
 @extends('app')
 
 @section('main')
+
+    {{-- COVER --}}
     <div class="section mx-auto px-4 grid grid-cols-2 gap-6 h-screen">
 
+        {{-- LEFT --}}
         <div class="flex flex-col justify-center gap-6">
             <p class="text-lg"><i class="fa-solid fa-heart text-red-500"></i> Loved by creators</p>
 
             <h1 class="text-8xl font-semibold">Launch your site in seconds</h1>
-
 
             <form class="p-1 bg-gradient-to-r from-amber-500 to-pink-500 rounded-lg w-full max-w-[26rem] flex">
                 <div class="py-2 px-4 bg-white rounded-l w-full flex items-center">
@@ -21,10 +23,94 @@
 
             <p>It's free, and takes less than a minute</p>
         </div>
+        {{-- LEFT --}}
 
+        {{-- RIGHT --}}
         <div class="flex items-end">
             <img src="/images/cover-girl.png" class="w-full object-contain" alt="">
         </div>
+        {{-- RIGHT --}}
 
     </div>
+    {{-- COVER --}}
+
+
+
+    {{-- FEATURES --}}
+    <div class="section mx-auto px-4 py-24 flex flex-col gap-12">
+
+        {{-- SECTION HEADER --}}
+        <h2 class="text-6xl font-semibold text-center leading-[5rem]">
+            Unmatchable features. <br> 
+            <span class="bg-gradient-to-r from-amber-500 to-pink-500 inline-block text-transparent bg-clip-text">Free, forever.</span>
+        </h2>
+        {{-- SECTION HEADER --}}
+
+
+        {{-- SECTION CONTENT --}}
+        <div class="grid grid-cols-2 gap-6 w-full max-w-4xl mx-auto">
+
+            {{-- FEATURE ITEM --}}
+            <div class="bg-white shadow rounded-xl p-6 h-96 relative overflow-hidden">
+
+                <div class="w-full max-w-64 h-full mx-auto rounded-t-xl overflow-hidden">
+                    <img src="/images/demo-theme.webp" class="w-full max-w-64 mx-auto" alt="">
+                </div>
+
+                <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-white via-white px-8 pb-8 pt-20">
+                    <h3 class="text-center text-2xl font-semibold">Pick a theme or <br> design your own</h3>
+                </div>
+
+            </div>
+            {{-- FEATURE ITEM --}}
+
+
+            {{-- FEATURE ITEM --}}
+            <div class="bg-white shadow rounded-xl p-6 h-96 relative overflow-hidden">
+
+                <div class="w-full max-w-64 h-full mx-auto rounded-t-xl overflow-hidden">
+                    <img src="/images/demo-apps.jpg" class="w-full max-w-64 mx-auto" alt="">
+                </div>
+
+                <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-white via-white px-8 pb-8 pt-20">
+                    <h3 class="text-center text-2xl font-semibold">Embed your favorite <br> apps and content</h3>
+                </div>
+
+            </div>
+            {{-- FEATURE ITEM --}}
+
+            {{-- FEATURE ITEM --}}
+            <div class="bg-white shadow rounded-xl p-6 h-96 relative overflow-hidden">
+
+                <div class="w-full max-w-64 h-full mx-auto rounded-t-xl overflow-hidden">
+                    <img src="/images/demo-chart.jpg" class="w-full max-w-64 mx-auto" alt="">
+                </div>
+
+                <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-white via-white px-8 pb-8 pt-20">
+                    <h3 class="text-center text-2xl font-semibold">Keep track of everything, <br> only for your eyes</h3>
+                </div>
+
+            </div>
+            {{-- FEATURE ITEM --}}
+
+
+            {{-- FEATURE ITEM --}}
+            <div class="bg-white shadow rounded-xl p-6 h-96 relative overflow-hidden">
+
+                <div class="w-full max-w-64 h-full mx-auto rounded-t-xl overflow-hidden">
+                    <img src="/images/demo-qr.jpg" class="w-full max-w-64 mx-auto" alt="">
+                </div>
+
+                <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-white via-white px-8 pb-8 pt-20">
+                    <h3 class="text-center text-2xl font-semibold">Keep track of everything, <br> only for your eyes</h3>
+                </div>
+
+            </div>
+            {{-- FEATURE ITEM --}}
+
+        </div>
+        {{-- SECTION CONTENT --}}
+
+    </div>
+    {{-- FEATURES --}}
 @endsection
