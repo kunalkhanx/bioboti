@@ -2,10 +2,11 @@
 - Setup Database
 - Design FAQ
 - Make homepage responsive
-- Fix navbar z-index issue
-
+- Design Login Page
+- Design Sign Up Page
 
 ## Completed
+- Fix navbar z-index issue
 - Design Footer
 - Design CTA Section
 - Design more features section

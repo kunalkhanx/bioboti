@@ -9,7 +9,7 @@
     <title>Biolinkar :: Create Your Bio Here</title>
 </head>
 <body class="bg-gray-100 text-gray-800">
-    <nav class="w-full fixed top-0 left-0">
+    <nav class="w-full fixed top-0 left-0 z-[499]">
         <div class="section mx-auto px-4 bg-white rounded-lg shadow h-16 mt-6 flex items-center justify-between">
             <a href="">
                 <p class="text-2xl font-medium">BioLinkar</p>
