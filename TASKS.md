@@ -2,10 +2,11 @@
 - Setup Database
 - Design FAQ
 - Make homepage responsive
-- Design Login Page
 - Design Sign Up Page
+- Add password view toggle on login & sign up page
 
 ## Completed
+- Design Login Page
 - Fix navbar z-index issue
 - Design Footer
 - Design CTA Section
