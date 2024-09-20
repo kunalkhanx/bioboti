@@ -19,7 +19,7 @@
                 <li><a href="" class="py-1 px-2 transition-all hover:text-gray-900">Home</a></li>
                 <li><a href="" class="py-1 px-2 transition-all hover:text-gray-900">Directory</a></li>
                 <li><a href="{{route('login')}}" class="py-1 px-2 transition-all hover:text-gray-900">Login</a></li>
-                <li><a href="" class="py-3 px-6 transition-all bg-gray-700 text-white rounded-full">Sign up</a></li>
+                <li><a href="{{route('signup')}}" class="py-3 px-6 transition-all bg-gray-700 text-white rounded-full">Sign up</a></li>
                 {{-- <li class="relative">
                     <button id="avatar-btn" class="h-10 w-10 rounded-full">
                         <img src="https://st3.depositphotos.com/9998432/13335/v/450/depositphotos_133352156-stock-illustration-default-placeholder-profile-icon.jpg" alt="" class="w-full rounded-full">
