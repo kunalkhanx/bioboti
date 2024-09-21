@@ -6,13 +6,13 @@
 - Add password view toggle on login & sign up page
 - Fix page links
 - Make navbar menu dynamic
-- Design an email template
 - Add email verification with OTP option
 - Add forgot password with OTP option
 - Add frontend validation for login form
 - Add frontend validation for signup form
 
 ## Completed
+- Design an email templates
 - Create user auth middleware
 - Create Login function
 - Design dashboard (pages)
