@@ -3,11 +3,14 @@
 - Make homepage responsive
 - Add password view toggle on login & sign up page
 - Fix page links
-- Create login & signup function
+- Create Login function
 - Create user auth middleware
 - Make navbar menu dynamic
+- Add email verification with OTP option
+- Add forgot password with OTP option
 
 ## Completed
+- Create signup function
 - Setup Database & user model
 - Design Sign Up Page
 - Design Login Page
