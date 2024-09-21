@@ -5,7 +5,6 @@
 - Make login & signup page responsive
 - Add password view toggle on login & sign up page
 - Fix page links
-- Create user auth middleware
 - Make navbar menu dynamic
 - Design an email template
 - Add email verification with OTP option
@@ -14,6 +13,7 @@
 - Add frontend validation for signup form
 
 ## Completed
+- Create user auth middleware
 - Create Login function
 - Design dashboard (pages)
 - Create signup function

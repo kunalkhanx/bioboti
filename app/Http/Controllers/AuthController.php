@@ -22,7 +22,7 @@ class AuthController extends Controller
             'username' => 'required',
             'password' => 'required'
         ]);
-        $user = User::where('username', $request->username)->first();
+        $user = User::where('username', $request->username)->where('role', '>', 0)->where('status', '>', 0)->first();
         if(!$user){
             return redirect()->back()->with('error', 'Invalid username or password!');
         }

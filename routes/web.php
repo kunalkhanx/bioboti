@@ -9,4 +9,7 @@ Route::post('/login', [\App\Http\Controllers\AuthController::class, 'do_login'])
 Route::post('/signup', [\App\Http\Controllers\AuthController::class, 'do_signup'])->name('do_signup');
 
 
-Route::get('/user/dashboard', [\App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
+Route::middleware('user')->group(function(){
+    Route::get('/user/dashboard', [\App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
+});
+
