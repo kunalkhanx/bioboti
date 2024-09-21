@@ -48,7 +48,7 @@
         </div>
     
         <div>
-            <button class="bg-gradient-to-r from-pink-500 to-rose-500 py-3 px-8 w-full rounded-md text-white">Sign Up</button>
+            <button type="submit" class="bg-gradient-to-r from-pink-500 to-rose-500 py-3 px-8 w-full rounded-md text-white">Sign Up</button>
         </div>
 
     </form>
