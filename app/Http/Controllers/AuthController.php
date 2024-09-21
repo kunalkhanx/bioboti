@@ -34,6 +34,6 @@ class AuthController extends Controller
         if(!$result){
             return response('', 500);
         }
-        return redirect()->back();
+        return redirect()->route('dashboard');
     }
 }

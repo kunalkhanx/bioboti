@@ -1,6 +1,8 @@
 ## Pending
 - Design FAQ
 - Make homepage responsive
+- Make dashboard responsive
+- Make login & signup page responsive
 - Add password view toggle on login & sign up page
 - Fix page links
 - Create Login function
@@ -10,6 +12,7 @@
 - Add forgot password with OTP option
 
 ## Completed
+- Design dashboard (pages)
 - Create signup function
 - Setup Database & user model
 - Design Sign Up Page
