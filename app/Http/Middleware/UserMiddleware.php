@@ -16,7 +16,7 @@ class UserMiddleware
     public function handle(Request $request, Closure $next): Response
     {
         $user = $request->user();
-        if(!$user || $user->status < 1 || $user->role < 1){
+        if(!$user || $user->status < 1 || $user->role < 1 || !$user->email_verified_at){
             return redirect()->route('login');
         }
         return $next($request);

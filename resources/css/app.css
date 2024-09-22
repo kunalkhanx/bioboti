@@ -45,12 +45,15 @@ body {
 .section{
     @apply container max-w-6xl;
 }
-/* .form-control{
-    @apply relative;
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
-.form-control input{
-    @apply rounded bg-gray-100 block w-[calc(100%-2px)] h-10 px-4 text-sm focus:outline-none relative mx-auto mb-[1px] peer;
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
-.form-control .input-border{
-    @apply absolute bottom-0 right-0 w-full h-[42px] rounded-[5px]  from-pink-500 via-amber-500 to-rose-500 peer-focus:bg-gradient-to-br bg-transparent;
-} */

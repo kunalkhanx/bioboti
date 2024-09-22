@@ -6,12 +6,14 @@
 - Add password view toggle on login & sign up page
 - Fix page links
 - Make navbar menu dynamic
-- Add email verification with OTP option
 - Add forgot password with OTP option
 - Add frontend validation for login form
 - Add frontend validation for signup form
+- Add resend OTP option for signup & password reset
+- Make otp send usign js for signup page
 
 ## Completed
+- Add email verification with OTP option
 - Design an email templates
 - Create user auth middleware
 - Create Login function
