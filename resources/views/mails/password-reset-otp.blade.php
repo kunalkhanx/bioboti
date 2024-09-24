@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Password Reset OTP</title>
+    <title>Password Reset Request</title>
     <style>
         /* General styling for email */
         body {
@@ -34,13 +34,6 @@
             font-size: 16px;
             line-height: 1.5;
         }
-        .otp-code {
-            font-size: 24px;
-            font-weight: bold;
-            margin: 20px 0;
-            text-align: center;
-            letter-spacing: 2px;
-        }
         .footer {
             background-color: #f4f4f4;
             color: #888888;
@@ -48,9 +41,26 @@
             padding: 10px;
             font-size: 12px;
         }
-        a {
-            color: #0073e6;
+        .btn {
+            color: #ffffff;
+            background-color: #374151;
+            padding: 10px 20px;
             text-decoration: none;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .link-text {
+            color: #374151;
+            word-break: break-all;
+            font-size: 14px;
+        }
+        .text-white{
+            color: #ffffff;
+        }
+        .text-dark{
+            color: #374151;
+            /* word-wrap: break-word; */
         }
     </style>
 </head>
@@ -66,13 +76,19 @@
         <tr>
             <td class="content">
                 <p>Hello {{$name}},</p>
-                <p>We received a request to reset your password. To proceed, please use the following One-Time Password (OTP):</p>
+                <p>We received a request to reset your password. You can reset your password by clicking the link below or copying and pasting it into your browser:</p>
                 
-                <!-- OTP Code -->
-                <p class="otp-code">{{$otp}}</p>
+                <!-- Password Reset Link as Button -->
+                <p style="text-align: center;">
+                    <a class="btn" href="{{$link}}"><span class="text-white">Reset Password</span></a>
+                </p>
 
-                <p>This OTP is valid for the next 5 minutes. If you didn't request a password reset, please ignore this email or contact us immediately.</p>
-                <p>To reset your password, simply enter this OTP in the password reset page.</p>
+                <!-- Password Reset Link as Text -->
+                <p>If the button above doesn't work, you can copy and paste this link:</p>
+                <p class="link-text">{{$link}}</p>
+
+                <p>If you didn't request a password reset, please ignore this email or contact us immediately.</p>
+                <p>This link will expire in 60 minutes for your security.</p>
                 <p>If you have any questions or need further assistance, please contact us at contact@biolinkar.com.</p>
                 <p>Best regards,<br>Biolinkar Team</p>
             </td>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ForgotPasswordOTP;
 use App\Mail\SignupOTP;
 use App\Models\User;
 use Exception;
@@ -26,7 +27,15 @@ class AuthController extends Controller
         if(!$request->token){
             return response('', 404);
         }
-        return view('auth.otp');
+        return view('auth.otp', ['action' => route('signup_verify_otp')]);
+    }
+
+    public function forgot_password(){
+        return view('auth.forgot-password');
+    }
+
+    public function forgot_password_otp(){
+        return view('auth.otp', ['action' => route('forgot_password_verify_otp')]);
     }
 
     public function signup_verify_otp(Request $request){
@@ -62,6 +71,62 @@ class AuthController extends Controller
         }
         Auth::loginUsingId($user->id);
         return redirect()->route('dashboard');
+    }
+    
+
+    public function forgot_password_verify(Request $request){
+        $token = $request->token;
+        if(!$token){
+            return response('', 404);
+        }
+        $payload = null;
+        try{
+            $payload = JWT::decode($token, new Key(env('APP_KEY'), 'HS256'));
+            if(!$payload || !$payload->user){
+                throw new Exception();
+            }        
+        }catch(Exception $e){
+            return response('', 403);
+        }
+        $user = User::where('id', $payload->user)->where('role', '>', 0)->where('status', '>', 0)->first();
+        if(!$user){
+            return response('', 404);
+        }
+        $payload = [
+            'user' => $user->id,
+            'exp' => time() + (60*5)
+        ];
+        $token = JWT::encode($payload, env('APP_KEY'), 'HS256');
+        return view('auth.password-reset', ['token' => $token]);
+    }
+
+    public function do_password_reset(Request $request){
+        if(!$request->password_token){
+            return response('', 403); 
+        }
+        $request->validate([
+            'password' => ['required', Password::min(8)->mixedCase()->numbers()->symbols()->uncompromised()],
+            'confirm_password' => 'required|same:password'
+        ]);
+        $payload = null;
+        try{
+            $payload = JWT::decode($request->password_token, new Key(env('APP_KEY'), 'HS256'));
+            if(!$payload || !$payload->user){
+                throw new Exception();
+            }        
+        }catch(Exception $e){
+            return response('', 403);
+        }
+        $user = User::where('id', $payload->user)->where('role', '>', 0)->where('status', '>', 0)->first();
+        if(!$user){
+            return response('', 404);
+        }
+        $user->password = $request->password;
+        $result = $user->save();
+        if(!$result){
+            return response('', 500);
+        }
+        return redirect()->route('login')->with('success', 'Success! Please login to continue.');
     }
 
     public function do_login(Request $request){
@@ -106,5 +171,27 @@ class AuthController extends Controller
         ];
         $token = JWT::encode($payload, env('APP_KEY'), 'HS256');
         return redirect()->route('signup_otp', ['token' => $token]);
+    }
+
+    public function do_forgot_password(Request $request){
+        $request->validate([
+            'email' => 'required|email'
+        ]);
+
+        $user = User::where('email', $request->email)->where('role', '>', 0)->where('status', '>', 0)->first();
+
+        if($user){
+            $payload = [
+                'user' => $user->id,
+                'exp' => time() + (60*60)
+            ];
+    
+            $token = JWT::encode($payload, env('APP_KEY'), 'HS256');
+            
+            Mail::to($user->email)->send(new ForgotPasswordOTP($user->username, route('forgot_password_verify', ['token' => $token])));
+        }       
+
+        return redirect()->back()->with('success', 'You will receive an email with instructions to reset your password');
+
     }
 }
