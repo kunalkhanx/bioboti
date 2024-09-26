@@ -16,5 +16,6 @@ Route::post('/reset-password', [\App\Http\Controllers\AuthController::class, 'do
 
 
 Route::middleware('user')->group(function(){
+    Route::get('/logout', [\App\Http\Controllers\AuthController::class, 'do_logout'])->name('do_logout');
     Route::get('/user/dashboard', [\App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
 });

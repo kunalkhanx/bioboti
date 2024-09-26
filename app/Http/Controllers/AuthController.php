@@ -194,4 +194,10 @@ class AuthController extends Controller
         return redirect()->back()->with('success', 'You will receive an email with instructions to reset your password');
 
     }
+
+
+    public function do_logout(){
+        Auth::logout();
+        return redirect()->route('login');
+    }
 }

@@ -15,10 +15,10 @@
 - Create Privacy Policy Page
 - Create report page
 - Add account & profile update
-- Add signout function
 - Design app database
 
 ## Completed
+- Add signout function
 - Fix page links
 - Make navbar menu dynamic
 - Add forgot password with email link

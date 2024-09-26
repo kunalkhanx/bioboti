@@ -28,7 +28,7 @@
                         <div class="py-1">
                             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Account</a>
                             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View Page</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sign Out</a>
+                            <a href="{{route('do_logout')}}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sign Out</a>
                         </div>
                     </div>
                 </li>
