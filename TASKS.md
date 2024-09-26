@@ -4,15 +4,22 @@
 - Make dashboard responsive
 - Make login & signup page responsive
 - Add password view toggle on login & sign up page
-- Fix page links
 - Add frontend validation for login form
 - Add frontend validation for signup form
 - Add resend OTP option for email verification
 - Make otp send usign js for signup page
 - Add email send success page for forgot password
 - Make password reset token expire after use
+- Make assets local
+- Create T&C page
+- Create Privacy Policy Page
+- Create report page
+- Add account & profile update
+- Add signout function
+- Design app database
 
 ## Completed
+- Fix page links
 - Make navbar menu dynamic
 - Add forgot password with email link
 - Add email verification with OTP option

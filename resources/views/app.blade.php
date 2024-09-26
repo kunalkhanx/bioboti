@@ -11,13 +11,14 @@
 <body class="bg-gray-100 text-gray-800">
     <nav class="w-full fixed top-0 left-0 z-[499]">
         <div class="section mx-auto px-4 bg-white rounded-lg shadow h-16 mt-6 flex items-center justify-between">
-            <a href="">
+            <a href="{{route('home')}}">
                 <p class="text-2xl font-medium">BioLinkar</p>
             </a>
 
             <ul class="flex items-center gap-2">
-                <li><a href="" class="py-1 px-2 transition-all hover:text-gray-900">Home</a></li>
-                <li><a href="" class="py-1 px-2 transition-all hover:text-gray-900">Directory</a></li>
+                <li><a href="{{route('dashboard')}}" class="py-1 px-2 transition-all hover:text-gray-900">Home</a></li>
+                <li><a href="#" class="py-1 px-2 transition-all hover:text-gray-900">Directory</a></li>
+                <li><a href="{{route('dashboard')}}" class="py-1 px-2 transition-all hover:text-gray-900">Dashboard</a></li>
                 @if(request()->user())
                 <li class="relative">
                     <button id="avatar-btn" class="h-10 w-10 rounded-full">

@@ -184,7 +184,7 @@
                 <h3 class="text-lg w-full max-w-sm">Start using the swiss army knife for the marketers.</h3>
             </div>
             
-            <a href="" class="flex items-center gap-3 bg-gray-700 py-4 px-10 rounded-md text-lg">
+            <a href="{{route('signup')}}" class="flex items-center gap-3 bg-gray-700 py-4 px-10 rounded-md text-lg">
                 <span>Sign up</span> <i class="fa-solid fa-arrow-right-long"></i>
             </a>
         </div>
