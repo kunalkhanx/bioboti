@@ -18,8 +18,3 @@ Route::post('/reset-password', [\App\Http\Controllers\AuthController::class, 'do
 Route::middleware('user')->group(function(){
     Route::get('/user/dashboard', [\App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
 });
-
-Route::get('/test', function(){
-    return view('mails.password-reset-otp', ['name' => 'kunal', 'link' => 'http://127.0.0.1:8000/forgot-password/verify?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjo2LCJleHAiOjE3MjcyMTA0MTN9.G3wXr3SVD35Sgw73KAoDviH5V2AEfbR20mj0bq4Wyg8']);
-});
-

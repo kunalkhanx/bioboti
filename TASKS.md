@@ -5,7 +5,6 @@
 - Make login & signup page responsive
 - Add password view toggle on login & sign up page
 - Fix page links
-- Make navbar menu dynamic
 - Add frontend validation for login form
 - Add frontend validation for signup form
 - Add resend OTP option for email verification
@@ -14,6 +13,7 @@
 - Make password reset token expire after use
 
 ## Completed
+- Make navbar menu dynamic
 - Add forgot password with email link
 - Add email verification with OTP option
 - Design an email templates
