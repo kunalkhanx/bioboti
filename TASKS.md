@@ -15,9 +15,9 @@
 - Create Privacy Policy Page
 - Create report page
 - Add account & profile update
-- Design app database
 
 ## Completed
+- Design app database
 - Add signout function
 - Fix page links
 - Make navbar menu dynamic
